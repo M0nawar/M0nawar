@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+	font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Website Links except the nav */
+
+a:link{
+  color: purple;
+}
+a:visited{
+  color: purple;
+}
+a:hover{
+  color: black;
+}
+a:active{
+  color: blue;
+}
+header{
+  text-align: center;
+  background-image: url(images/logo.jpg);
+}
+header img{
+  float: left;
+  margin-left: 20px;
+  padding: 5px;
+}
+nav{
+  background-color: mediumpurple;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 5px;
+}
+nav ul{
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+nav li{
+  display: inline;
+  padding: 5px;
+}
+nav a{
+  text-decoration: none;
+}
+nav a:link{
+  color:white;
+}
+nav a:visited{
+  color:orange;
+}
+nav a:hover{
+  color:black;
+}
+nav a:active{
+  color:blue;
+}
+/*main*/
+main{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+/*footer*/
+footer{
+  border-top: black 3px solid;
+  text-align: center;
+  color: black;
+  background-image: url(images/wave-hero.jpg);
+}
+footer a:visited{
+  color: orange;
+}
+footer a:link{
+  color: white;
+}
+footer a:hover{
+  color: black;
+}
+footer a:active{
+  color: blue;
+}
+
+h1{
+  font-family: "Dancing Script", cursive;
+}
+
+h2{
+    font-family: "Playfair Display", sans-serif;
+}
+.home-hero{
+  background-image: url(images/wave-hero.jpg);
+  background-size: cover;
+}
+.home-hero h1{
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+.home-photo{
+  float: right;
+  max-width: 45%;
+  height: auto;
+  margin: 20px 0 10px 20px;
+}
+.logo{
+   margin: 0 auto;
+   display:block;
+}
+.fluid{
+  max-width: 100%;
+  margin-left: auto;
+margin-right: auto;
+  display: block;
+  height: auto;
+}
+.gallery .preview{
+    width: 100%;
+    height: auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+#table{
+  display: grid;
+  grid-template-columns:75px 75px 75px;
+  row-gap:5px;
+  column-gap:5px;
+  
+}
+#table div{
+  padding:10px;
+  background-color:#CBC3E3;
+  color:white;
+  height: 50px;
+  text-align:center;
+  display: block;
+} 
+
+
+
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+    font-size: 4em;
+ }
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 1.8em;
+}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
